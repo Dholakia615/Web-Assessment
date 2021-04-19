@@ -1,3 +1,0 @@
-The URL for the public host:
-
-https://web222-final-five.vercel.app
