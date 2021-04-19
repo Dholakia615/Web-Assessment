@@ -1,3 +1,8 @@
+//Student Name:   Kartik Dholakia
+//Student Number: 121575203
+//Email:          kddholakia@myseneca.ca
+//Assessment:     Final
+
 // An instance of our SimpleMap, created below when the window loads.
 let map;
 
@@ -33,7 +38,7 @@ function showObservations(observations, title) {
 function showAll() {
   // Get all the observations from our data.js and format them so we can work with the data
   const observations = getAllObservations();
-  showObservations(observations, 'All Species');
+  showObservations(observations, "All Species");
 }
 
 // Show native species
@@ -43,7 +48,7 @@ function showOnlyNative() {
   // Filter out any that aren't native species
   const native = filterOnlyNative(observations);
 
-  showObservations(native, 'Only Native Species');
+  showObservations(native, "Only Native Species");
 }
 
 // Show introduced species
@@ -53,7 +58,7 @@ function showOnlyIntroduced() {
   // Filter out any that aren't introduced species
   const introduced = filterOnlyIntroduced(observations);
 
-  showObservations(introduced, 'Only Introduced Species');
+  showObservations(introduced, "Only Introduced Species");
 }
 
 function start() {
@@ -73,8 +78,8 @@ function start() {
   btnOnlyIntroduced.onclick = () => showOnlyIntroduced();
 
   // Connect the search form
-  const searchForm = document.querySelector('form');
-  searchForm.onsubmit = function(event) {
+  const searchForm = document.querySelector("form");
+  searchForm.onsubmit = function (event) {
     // Stop the form from trying to submit over the network. We'll process the data here.
     event.preventDefault();
 
@@ -82,11 +87,11 @@ function start() {
     // search() function (already defined in js/search.js)
     console.log(document.querySelector("#typeSearch").value);
     search(document.querySelector("#typeSearch").value);
-    console.log('TODO - call search() function with value from search form');
+    console.log("TODO - call search() function with value from search form");
   };
 
   // Show all observations at first
   showAll();
-};
+}
 
 window.onload = start;

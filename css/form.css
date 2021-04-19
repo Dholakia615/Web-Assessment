@@ -1,35 +1,42 @@
+/*
+Student Name:   Kartik Dholakia
+Student Number: 121575203
+Email:          kddholakia@myseneca.ca
+Assessment:     Final
+*/
+
 /**
  * Styles for the add-observation.html page 
  */
- .required:after {
-    content: "* ";
-    color: red;
+.required:after {
+  content: "* ";
+  color: red;
 }
 
-#description{
-    width: 560px;
+#description {
+  width: 560px;
 }
 
-#Latitude{
-    color: red;
+#Latitude {
+  color: red;
 }
 
-#Longitude{
-    color: red;
+#Longitude {
+  color: red;
 }
 
-#Latitude::before{
-    content: " "
+#Latitude::before {
+  content: " ";
 }
 
- #Longitude::before{
-    content: " "
+#Longitude::before {
+  content: " ";
 }
 
-#latitude{
-    color: black;
+#latitude {
+  color: black;
 }
 
-#longitude{
-    color: black;
+#longitude {
+  color: black;
 }
