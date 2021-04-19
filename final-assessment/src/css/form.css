@@ -1,0 +1,35 @@
+/**
+ * Styles for the add-observation.html page 
+ */
+ .required:after {
+    content: "* ";
+    color: red;
+}
+
+#description{
+    width: 560px;
+}
+
+#Latitude{
+    color: red;
+}
+
+#Longitude{
+    color: red;
+}
+
+#Latitude::before{
+    content: " "
+}
+
+ #Longitude::before{
+    content: " "
+}
+
+#latitude{
+    color: black;
+}
+
+#longitude{
+    color: black;
+}
