@@ -98,23 +98,22 @@
       </section>
 
       <section>
-          <h2>Map</h2>
-          <!-- Search Form -->
-          <form id="search" action="info.html" method="POST">
-           <div id="search">      
-           <input type="search" name="search" id="typeSearch" placeholder="1750 Finch Ave E, North York, ON, CA">
-           <button type="submit" id="find"  for="search" >
-             <span><i class="fas fa-search" title="search"></i> Search</span>
-           </button>
-           </div>
-         </form>
-         
-        <!-- Leaflet Map will get drawn within this div element -->
+        <h2>Map</h2>
+        <!-- Search Form -->
+        <form id="search" action="submit.html" method="POST">
+          <div id="search">      
+          <input type="search" name="search" id="searchBar" placeholder="1750 Finch Ave E, North York, ON, CA">
+          <button type="submit" id="searchButton"  for="search" >
+            <span><i class="fas fa-search" title="search"></i> Search</span>
+          </button>
+          <!-- <input type="submit" name="submit"> -->
+          </div>
+        </form>
+          <!-- Leaflet Map will get drawn within this div element -->
         <div id="map" class="loading">
           <div id="map-container"></div>
         </div>
       </section>
-
       <!-- Data Table -->
       <section id="observations">
         <!-- This span needs to be populated at runtime with JavaScript -->

@@ -125,7 +125,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
  }
-
- #typeSearch{
-  width: 660px;
+ #searchBar{
+  width: 650px;
  }
