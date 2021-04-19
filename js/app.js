@@ -80,8 +80,8 @@ function start() {
 
     // TODO - get the value from the search form input and pass it to the
     // search() function (already defined in js/search.js)
-    console.log(document.querySelector("#searchBar").value);
-    search(document.querySelector("#searchBar").value);
+    console.log(document.querySelector("#typeSearch").value);
+    search(document.querySelector("#typeSearch").value);
     console.log('TODO - call search() function with value from search form');
   };
 

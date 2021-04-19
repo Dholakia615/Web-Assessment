@@ -54,60 +54,58 @@
     <main>
       <section>
         <h2>Observation Details</h2>
-        <p><span class="required">*</span> Required field</p>
-        <form id="newObservations" action="https://formspree.io/f/mbjqljjr" method="POST" onsubmit="return validate();">
+        <p><span class="required"></span> Required field</p>
+        <form>
           <!-- TODO: create the form based on the specification in the Final Assessment -->
-          <fieldset>
-            <legend>Observation</legend>
-                <label id="labelSpeciesGuess" for="speciesGuess" class="required">Species Guess</label> 
-                <input id="speciesGuess" name="speciesGuess" type="text" placeholder="Great Horned Owl" required/> 
-                
-                <label id="labelDescription" for="description" class="required">Description</label>
-                <input id="description" name="description" type="text" placeholder="Roosting on fence post at the edge of a field" required/>
+          <form id="observationForm" action="https://formspree.io/f/xyylzjqp" method="POST" onsubmit="return validate();">
+            <fieldset>
+              <legend>Observation</legend>
+                  <label id="speciesGuess" for="speciesGuess" class="required">Species Guess</label> 
+                  <input id="speciesGuess" name="speciesGuess" type="text" placeholder="Great Horned Owl" required/> 
 
-                <label id="labelDateObserved" for="dateObserved" class="required">Date Observed</label>
-                <input id="dateObserved" name="dateObserved" type="date" required/>
-
-                <label id="labelNotes" for="notes">Notes</label>
-                <textarea id="txtaDescription" name="Description" cols="76" rows="3" placeholder="Notes about observation..."></textarea>
-          </fieldset>
-
-          <fieldset>
-            <legend>Location</legend>
-            <div id="latitudeDiv"><label id="labelLatitude" for="Latitude" class="required">Latitude</label></div>
-                <input id="latitude" name="latitude" type="text" placeholder="43.7955" required/>
-                
-                <div id="longitudeDiv"><label id="labelLongitude" for="longitude" class="required">Longitude</label> </div>
-                <input id="longitude" name="longitude" type="text" placeholder="-79.3496" required/>
-                
-                <input id="chkTerms" name="terms" type="checkbox"/>
-                <label for="chkTerms">Share Location Information (i.e it's ok to make this public)</label>
-          </fieldset>
-
-          <fieldset>
-            <legend>Photo</legend>
-                <label id="labelPhotographerName" for="photographerName">Photographer Name</label>
-                <input id="photographerName" name="photographerName" type="text" placeholder="Karen Shu"/>
-                
-                <label id="labelphotographerEmail" for="photographerEmail">Photographer Email</label>
-                <input id="photographerEmail" name="photographerEmail" type="text" placeholder="kshu@photos.com"/>
-
-                <label id="lablePhoto" for="photo">Photo</label>
-                <input id="photo" name="photo" type="file"/>
-
-                <label id="labelLicense" for="license">License (<a href="https://creativecommons.org/choose/">help on choosing a license</a>)</label>
-                <select id="license" name="license">
-                  <option value="CC-BY">Creative Commons Attribution License</option>
-                  <option value="CC-BY-NC">Creative Commons Attribution-NonCommercial License</option>
-                  <option value="CC-BY-SA">Creative Commons Attribution-ShareAlike License</option>
-                  <option value="CC-BY-ND">Creative Commons Attribution-NoDerivs License </option>
-                  <option value="CC-BY-NC-SA">Creative Commons Attribution-NonCommercial-ShareAlike License</option>
-                  <option value="CC-BY-NC-ND">Creative Commons Attribution-NonCommercial-NoDerivs License</option>
-                </select>         
-               </fieldset>
-
-          <input id="submit" name="submit" type="submit" placeholder="Karen Shu"/>
-
+                  <label id="description" for="description" class="required">Description</label>
+                  <input id="description" name="description" type="text" placeholder="Roosting on fence post at the edge of a field" required/>
+  
+                  <label id="dateObserved" for="dateObserved" class="required">Date Observed</label>
+                  <input id="dateObserved" name="dateObserved" type="date" required/>
+  
+                  <label id="notes" for="notes">Notes</label>
+                  <textarea id="desc" name="Description" cols="80" rows="3" placeholder="Notes about observation..."></textarea>
+            </fieldset>
+            <fieldset>
+              <legend>Location</legend>
+              <div id="Latitude"><label id="latitude" for="latitude" class="required">Latitude</label></div>
+                  <input id="latitude" name="latitude" type="text" placeholder="43.7955" required/>
+                  
+                  <div id="Longitude"><label id="longitude" for="longitude" class="required">Longitude</label> </div>
+                  <input id="longitude" name="longitude" type="text" placeholder="-79.3496" required/>
+                  
+                  <input id="terms" name="terms" type="checkbox"/>
+                  <label for="terms">Share location information (i.e it's ok to make this public)</label>
+            </fieldset>
+  
+            <fieldset>
+              <legend>Photo</legend>
+                  <label id="photographerName" for="photographerName">Photographer Name</label>
+                  <input id="photographerName" name="photographerName" type="text" placeholder="Karen Shu"/>
+                  
+                  <label id="photographerEmail" for="photographerEmail">Photographer Email</label>
+                  <input id="photographerEmail" name="photographerEmail" type="text" placeholder="kshu@photos.com"/>
+  
+                  <label id="photo" for="photo">Photo</label>
+                  <input id="photo" name="photo" type="file"/>
+  
+                  <label id="license" for="license">License (<a href="https://creativecommons.org/choose/">help on choosing a license</a>)</label>
+                  <select id="license" name="license">
+                    <option value="CC-BY">Creative Commons Attribution License</option>
+                    <option value="CC-BY-NC">Creative Commons Attribution-NonCommercial License</option>
+                    <option value="CC-BY-SA">Creative Commons Attribution-ShareAlike License</option>
+                    <option value="CC-BY-ND">Creative Commons Attribution-NoDerivs License </option>
+                    <option value="CC-BY-NC-SA">Creative Commons Attribution-NonCommercial-ShareAlike License</option>
+                    <option value="CC-BY-NC-ND">Creative Commons Attribution-NonCommercial-NoDerivs License</option>
+                  </select>         
+                 </fieldset>
+            <input id="submit" name="submit" type="submit" placeholder="Karen Shu"/>
         </form>
       </section>
     </main>

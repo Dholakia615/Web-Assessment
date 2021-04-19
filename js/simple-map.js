@@ -11,7 +11,7 @@
  * @param {number} zoomLevel optional zoom level of the map (defaults to 15)
  * @returns {Object}
  */
- function SimpleMap(id, lat = 43.7955, lng = -79.3496, zoomLevel = 15) {
+function SimpleMap(id, lat = 43.7955, lng = -79.3496, zoomLevel = 15) {
   const map = L.map(id, { scrollWheelZoom: false }).setView(
     [lat, lng],
     zoomLevel

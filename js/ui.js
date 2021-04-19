@@ -105,32 +105,33 @@ function toggleLoading(isLoading) {
   // Finally, we need to disable the button, so the user doesn't click it multiple
   // times (i.e., we need to wait until the loading finishes).  We decide what to
   // do based on the value of the isLoading argument.
-  var button = document.getElementById("searchButton");
+  var buttonState = document.getElementById("searchButton");
+  
   if (isLoading) {
-    button.innerHTML = '';
-    button.disabled = true;
+    buttonState.innerHTML = '';
+    buttonState.disabled = true;
     var span = document.createElement("span");
-    var i = document.createElement("i");
-    var txt = document.createTextNode(" Loading");
+    var j = document.createElement("j");
+    var text = document.createTextNode(" Loading...");
 
-    i.setAttribute("class", "fas fa-hourglass-half");
-    i.setAttribute("title", "search");
-    span.appendChild(i);
-    span.appendChild(txt); 
-    button.appendChild(span); 
+    j.setAttribute("class", "fas fa-hourglass-half");
+    j.setAttribute("title", "search");
+    span.appendChild(j);
+    span.appendChild(text); 
+    buttonState.appendChild(span); 
    }
   else{
-    button.innerHTML = '';
-    button.disabled = false;
+    buttonState.innerHTML = '';
+    buttonState.disabled = false;
     var span = document.createElement("span");
-    var i = document.createElement("i");
-    var txt = document.createTextNode(" Search");
+    var j = document.createElement("j");
+    var text = document.createTextNode(" Search");
 
-    i.setAttribute("class", "fas fa-search");
-    i.setAttribute("title", "search");
-    span.appendChild(i);
-    span.appendChild(txt); 
-    button.appendChild(span);
+    j.setAttribute("class", "fas fa-search");
+    j.setAttribute("title", "search");
+    span.appendChild(j);
+    span.appendChild(text); 
+    buttonState.appendChild(span);
   }
   console.log('TODO - toggle the state of the Search button to/from Loading');
 }

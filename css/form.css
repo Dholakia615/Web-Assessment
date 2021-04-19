@@ -7,32 +7,29 @@
 }
 
 #description{
-    width: 550px;
+    width: 560px;
 }
 
- #latitudeDiv{
+#Latitude{
     color: red;
-    
-  
- }
- #longitudeDiv{
+}
+
+#Longitude{
     color: red;
-    
- }
+}
 
- #latitudeDiv::before{
+#Latitude::before{
     content: " "
-  
- }
+}
 
- #longitudeDiv::before{
+ #Longitude::before{
     content: " "
-  
- }
+}
 
- #labelLatitude{
+#latitude{
     color: black;
- }
- #labelLongitude{
+}
+
+#longitude{
     color: black;
- }
+}
